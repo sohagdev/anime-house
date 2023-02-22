@@ -7,3 +7,21 @@
 ::-webkit-scrollbar {
   width: 0px;
 }
+.swiper-button-next,
+.swiper-button-prev {
+  color: #bf011c;
+  font-weight: bolder;
+}
+.swiper-pagination {
+  width: 10px;
+  height: 10px;
+  background-color: #bf011c;
+  padding: 5px;
+  position: absolute;
+  left: 0;
+  bottom: auto;
+  text-align: center;
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}

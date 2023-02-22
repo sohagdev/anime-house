@@ -77,16 +77,16 @@ const Navbar = () => {
             </Link>
           </div>
           <div className='social-links sm:flex hidden'>
-            <Link>
+            <Link to='#'>
               <BsYoutube className='w-10 h-10 sm:w-11 sm:h-11 px-3 ' />
             </Link>
-            <Link>
+            <Link to='#'>
               <BsTwitter className='w-10 h-10 sm:w-11 sm:h-11 px-3 ' />
             </Link>
-            <Link>
+            <Link to='#'>
               <BsFacebook className='w-10 h-10 sm:w-11 sm:h-11 px-3 ' />
             </Link>
-            <Link>
+            <Link to='#'>
               <BsInstagram className='w-10 h-10 sm:w-11 sm:h-11 px-3 ' />
             </Link>
           </div>
