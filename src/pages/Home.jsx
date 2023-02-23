@@ -17,7 +17,7 @@ import {
 } from '../assets/index'
 
 // import required modules
-import { Autoplay, Navigation, Pagination } from 'swiper'
+import { Autoplay, Navigation } from 'swiper'
 
 const Home = () => {
   return (
@@ -25,15 +25,12 @@ const Home = () => {
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
-        // autoplay={{
-        //   delay: 2500,
-        //   disableOnInteraction: false
-        // }}
-        pagination={{
-          clickable: true
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false
         }}
         navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay, Navigation]}
         className='mySwiper'
       >
         <SwiperSlide className='relative'>
