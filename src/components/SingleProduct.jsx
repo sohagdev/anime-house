@@ -1,17 +1,18 @@
 import React, { useContext } from 'react'
+import { Link } from 'react-router-dom'
 import { CartContext } from '../CartContext'
 const singleProduct = ({ product }) => {
   const { id, title, price, image } = product
   const cart = useContext(CartContext)
   return (
     <div className='w-full bg-white rounded-lg drop-shadow-md hover:drop-shadow-xl'>
-      <a href='#'>
+      <Link to={id ? `/product/${id}` : 'not available'}>
         <img
           className='p-8 rounded-t-lg w-full h-2/3'
           src={image}
           alt='product image'
         />
-      </a>
+      </Link>
       <div className='px-5 pb-5'>
         <a href='#'>
           <h5 className='text-xl font-semibold tracking-tight text-gray-900'>

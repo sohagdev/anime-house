@@ -29,7 +29,7 @@ const CartProduct = ({ currentProduct }) => {
                 </div>
               </div>
               <div className='flex flex-1 items-end justify-between text-sm'>
-                <div className='text-xl font-bold rounded-md text-gray-500 border-2 border-primary-color'>
+                <div className='text-sm sm:text-xl font-bold rounded-md text-gray-500 border-2 border-primary-color'>
                   <button
                     className='px-2'
                     onClick={() => cart.addOneToCart(productData.id)}

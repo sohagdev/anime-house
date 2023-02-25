@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { CartContext } from '../CartContext'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
-
+import { getFeaturedProducts } from '../Data/products'
+import SingleProduct from '../components/SingleProduct'
+import FeaturedBrand from '../components/FeaturedBrand'
 // Import Swiper styles
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -20,6 +23,8 @@ import {
 import { Autoplay, Navigation } from 'swiper'
 
 const Home = () => {
+  const featuredProducts = getFeaturedProducts()
+  const cart = useContext(CartContext)
   return (
     <>
       <Swiper
@@ -119,6 +124,29 @@ const Home = () => {
           </div>
         </SwiperSlide>
       </Swiper>
+
+      <div className='featured product container mx-auto my-10 mt-10'>
+        <h1 className='my-5 text-4xl font-extrabold leading-none tracking-tight text-slate-900 md:text-5xl lg:text-6xl'>
+          Our Featured{' '}
+          <span className='underline underline-offset-3 decoration-8 decoration-primary-color'>
+            Collection
+          </span>
+        </h1>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10'>
+          {featuredProducts.map((product, index) => (
+            <SingleProduct product={product} key={index} />
+          ))}
+        </div>
+      </div>
+      <div className='featured-brand container mx-auto my-10 mt-16'>
+        <h1 className='my-5 text-4xl font-extrabold leading-none tracking-tight text-slate-900 md:text-5xl lg:text-6xl'>
+          Featured In{' '}
+          <span className='underline underline-offset-3 decoration-8 decoration-primary-color'>
+            Top Brands
+          </span>
+        </h1>
+        <FeaturedBrand />
+      </div>
     </>
   )
 }

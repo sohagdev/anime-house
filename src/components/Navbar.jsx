@@ -118,7 +118,7 @@ const Navbar = () => {
           onClick={handleClose}
         ></div>
         <div
-          className={`cart absolute sm:w-1/3 w-full h-full bg-gray-200 right-0 top-0 duration-500 ease-out transition-all overflow-y-scroll ${
+          className={`cart absolute xl:w-1/3 md:w-2/3 sm:w-2/3 w-full h-full bg-gray-200 right-0 top-0 duration-500 ease-out transition-all overflow-y-scroll ${
             show ? '' : 'translate-x-full'
           }`}
         >

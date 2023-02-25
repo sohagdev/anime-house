@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import ErrorBoundary from './ErrorBoundary'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Navbar, Footer } from './components'
+import { Navbar, Footer, ProductDetail } from './components'
 import { Home, About, Products, Location, Contact } from './pages'
 import { CartProvider } from './CartContext'
 import './App.css'
@@ -17,6 +17,7 @@ function App() {
               <Route exact path='/' element={<Home />} />
               <Route path='/about' element={<About />} />
               <Route path='/products' element={<Products />} />
+              <Route path='/product/:id' element={<ProductDetail />} />
               <Route path='/location' element={<Location />} />
               <Route path='/contact-us' element={<Contact />} />
             </Routes>
