@@ -1,7 +1,8 @@
-import React from 'react'
-
+import React, { useContext } from 'react'
+import { CartContext } from '../CartContext'
 const singleProduct = ({ product }) => {
-  const { title, price, image } = product
+  const { id, title, price, image } = product
+  const cart = useContext(CartContext)
   return (
     <div className='w-full bg-white rounded-lg drop-shadow-md hover:drop-shadow-xl'>
       <a href='#'>
@@ -74,12 +75,12 @@ const singleProduct = ({ product }) => {
         </div>
         <div className='flex items-center justify-between'>
           <span className='text-3xl font-bold text-gray-900'>${price}</span>
-          <a
-            href='#'
+          <button
             className='text-white bg-primary-color hover:bg-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center'
+            onClick={() => cart.addOneToCart(id)}
           >
             Add to cart
-          </a>
+          </button>
         </div>
       </div>
     </div>
