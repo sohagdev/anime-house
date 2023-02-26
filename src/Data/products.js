@@ -177,5 +177,10 @@ function getProductData(id) {
 function getFeaturedProducts() {
   return productsArray.filter((product) => product.featured)
 }
+function getSearchProducts(searchTerm) {
+  return productsArray.filter((product) =>
+    product.title.toLowerCase().includes(searchTerm)
+  )
+}
 
-export { productsArray, getProductData, getFeaturedProducts }
+export { productsArray, getProductData, getFeaturedProducts, getSearchProducts }
