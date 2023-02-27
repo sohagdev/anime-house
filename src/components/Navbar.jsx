@@ -47,7 +47,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className='navbar-links bg-primary-color text-white text-sm'>
+        <div className='navbar-links bg-primary-color text-white text-lg'>
           <div className='container flex flex-wrap justify-between mx-auto  py-5'>
             <div className='pages flex flex-wrap'>
               <Link className='p-2 sm:p-3 font-bold' to='/'>
