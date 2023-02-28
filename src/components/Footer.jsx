@@ -59,6 +59,9 @@ const Footer = () => {
             <Link className='m-3 sm:m-5 font-bold' to='/shipping-policy'>
               Delivery Policy
             </Link>
+            <Link className='m-3 sm:m-5 font-bold' to='/anime-house-points'>
+              Anime House Points
+            </Link>
           </div>
           <div className='copyright pb-10'>
             <h1>&copy; {year} Arywan | All Right Reserved</h1>

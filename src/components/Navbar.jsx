@@ -57,22 +57,10 @@ const Navbar = () => {
                 About
               </Link>
               <Link className='p-2 sm:p-3 font-bold' to='/products'>
-                Click & Collect
-              </Link>
-              <Link className='p-2 sm:p-3 font-bold' to='/shipping-policy'>
-                Shipping Policy
-              </Link>
-              <Link className='p-2 sm:p-3 font-bold' to='/refund-policy'>
-                Refund Policy
+                Products
               </Link>
               <Link className='p-2 sm:p-3 font-bold' to='/location'>
                 Location
-              </Link>
-              <Link className='p-2 sm:p-3 font-bold' to='/anime-house-points'>
-                Anime House Points
-              </Link>
-              <Link className='p-2 sm:p-3 font-bold' to='/anime-house-points'>
-                Term Of Services
               </Link>
               <Link className='p-2 sm:p-3 font-bold' to='/contact-us'>
                 Contact Us

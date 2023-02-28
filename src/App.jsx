@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import React from 'react'
 import ErrorBoundary from './ErrorBoundary'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { Navbar, Footer, ProductDetail, SearchFeed } from './components'
 import {
   Home,
@@ -21,29 +21,34 @@ function App() {
     <ErrorBoundary>
       <CartProvider>
         <BrowserRouter>
-          <div className='App'>
-            <Navbar />
-            <Routes>
-              <Route exact path='/' element={<Home />} />
-              <Route path='/about' element={<About />} />
-              <Route path='/products' element={<Products />} />
-              <Route path='/product/:id' element={<ProductDetail />} />
-              <Route path='/location' element={<Location />} />
-              <Route path='/contact-us' element={<Contact />} />
-              <Route path='/search/:searchTerm' element={<SearchFeed />} />
-              <Route path='/shipping-policy' element={<DeliveryPolicy />} />
-              <Route path='/refund-policy' element={<Refund />} />
-              <Route path='/terms & condition' element={<Terms />} />
-              <Route
-                path='/anime-house-points'
-                element={<AnimeHousePoints />}
-              />
-            </Routes>
-            <Footer />
-          </div>
+          <AppContent />
         </BrowserRouter>
       </CartProvider>
     </ErrorBoundary>
+  )
+}
+
+function AppContent() {
+  const location = useLocation()
+
+  return (
+    <>
+      {location.pathname !== '/' && <Navbar />}
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/products' element={<Products />} />
+        <Route path='/product/:id' element={<ProductDetail />} />
+        <Route path='/location' element={<Location />} />
+        <Route path='/contact-us' element={<Contact />} />
+        <Route path='/search/:searchTerm' element={<SearchFeed />} />
+        <Route path='/shipping-policy' element={<DeliveryPolicy />} />
+        <Route path='/refund-policy' element={<Refund />} />
+        <Route path='/terms & condition' element={<Terms />} />
+        <Route path='/anime-house-points' element={<AnimeHousePoints />} />
+      </Routes>
+      {location.pathname !== '/' && <Footer />}
+    </>
   )
 }
 

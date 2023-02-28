@@ -1,153 +1,54 @@
-import React, { useContext } from 'react'
-import { CartContext } from '../CartContext'
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { getFeaturedProducts } from '../Data/products'
-import SingleProduct from '../components/SingleProduct'
-import FeaturedBrand from '../components/FeaturedBrand'
-// Import Swiper styles
-import 'swiper/css'
-import 'swiper/css/navigation'
-import '../App.css'
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { mainLogo, videoBackground } from '../assets'
 
-import {
-  sliderOne,
-  sliderTwo,
-  sliderThree,
-  sliderFour,
-  sliderFive,
-  sliderSix
-} from '../assets/index'
-
-// import required modules
-import { Autoplay, Navigation } from 'swiper'
-
-const Home = () => {
-  const featuredProducts = getFeaturedProducts()
-  const cart = useContext(CartContext)
+function Home() {
   return (
-    <>
-      <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false
-        }}
-        navigation={true}
-        modules={[Autoplay, Navigation]}
-        className='mySwiper'
+    <div className='relative'>
+      <video
+        className='absolute top-0 left-0 object-cover w-full h-full'
+        autoPlay
+        muted
+        loop
       >
-        <SwiperSlide className='relative'>
-          <img className='w-full h-full' src={sliderOne} alt='slider' />
-          <div className='content lg:block hidden absolute top-1/4 left-2/3 text-white'>
-            <h1 className='bg-black text-2xl hover:underline px-5 py-3'>
-              Got Anime? Members One Day Sale
-            </h1>
-            <h3 className='bg-black text-lg px-5 py-3 my-5'>
-              A members-only sale! <br /> Sale Ends: Soon
-            </h3>
-            <p className='bg-black text-lg px-5 py-3 w-full inline hover:underline'>
-              Lord Over These Deals
-            </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className='relative'>
-          <img className='w-full h-full' src={sliderTwo} alt='slider' />
-          <div className='content lg:block hidden absolute top-1/4 left-2/3 text-black'>
-            <h1 className='bg-white text-2xl hover:underline px-5 py-3'>
-              Look What The Truck Dragged In
-            </h1>
-            <h3 className='bg-white text-lg px-5 py-3 my-5'>
-              New Releases Galore!
-            </h3>
-            <p className='bg-white text-lg px-5 py-3 w-full inline hover:underline'>
-              Order Before They're Gone!
-            </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className='relative'>
-          <img className='w-full h-full' src={sliderThree} alt='slider' />
-          <div className='content lg:block hidden absolute top-1/4 left-2/3 text-white'>
-            <h1 className='bg-black text-2xl hover:underline px-5 py-3'>
-              Pre-Order To Not Get PO'd
-            </h1>
-            <h3 className='bg-black text-lg px-5 py-3 my-5'>
-              Put Off Ordering No Longer!
-            </h3>
-            <p className='bg-black text-lg px-5 py-3 w-full inline hover:underline'>
-              Get your items ASAP!
-            </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img className='w-full h-full' src={sliderFour} alt='slider' />
-          <div className='content lg:block hidden absolute top-1/4 left-2/3 text-black'>
-            <h1 className='bg-white text-2xl hover:underline px-5 py-3'>
-              Dark Horse/Square Enix/Graphic Novels
-            </h1>
-            <h3 className='bg-white text-lg px-5 py-3 my-5'>
-              The Weekly Specials Anime-zing Race is on!
-            </h3>
-            <p className='bg-white text-lg px-5 py-3 w-full inline hover:underline'>
-              On your marks, get set, go!
-            </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img className='w-full h-full' src={sliderFive} alt='slider' />
-          <div className='content lg:block hidden absolute top-1/4 right-2/3 text-white'>
-            <h1 className='bg-black text-2xl hover:underline px-5 py-3'>
-              What The DEALS?!?!
-            </h1>
-            <h3 className='bg-black text-lg px-5 py-3 my-5'>
-              Don't miss out! We have new deals EVERY! DAY!
-            </h3>
-            <p className='bg-black text-lg px-5 py-3 w-full inline hover:underline'>
-              Save Now!
-            </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img className='w-full h-full' src={sliderSix} alt='slider' />
-          <div className='content lg:block hidden absolute top-1/4 left-2/3 text-white'>
-            <h1 className='bg-black text-2xl hover:underline px-5 py-3'>
-              Got Anime? Savings Club
-            </h1>
-            <h3 className='bg-black text-lg px-5 py-3 my-5'>
-              If you buy even a few items a year, <br /> you can start saving
-              some cash now by joining Anime House
-            </h3>
-            <p className='bg-black text-lg px-5 py-3 w-full inline hover:underline'>
-              Learn More
-            </p>
-          </div>
-        </SwiperSlide>
-      </Swiper>
-
-      <div className='featured product container mx-auto my-10 mt-10'>
-        <h1 className='my-5 text-4xl font-extrabold leading-none tracking-tight text-slate-900 md:text-5xl lg:text-6xl'>
-          Our Featured{' '}
-          <span className='underline underline-offset-3 decoration-8 decoration-primary-color'>
-            Collection
-          </span>
-        </h1>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10'>
-          {featuredProducts.map((product, index) => (
-            <SingleProduct product={product} key={index} />
-          ))}
+        <source src={videoBackground} type='video/mp4' />
+      </video>
+      <div className='absolute inset-0 bg-black opacity-50'></div>
+      <div className='relative z-10 flex flex-col items-center justify-center h-screen px-8'>
+        <div className='container my-10 flex justify-between items-center mx-auto flex-wrap'>
+          <img src={mainLogo} alt='logo' className='w-64' />
+          <nav className='flex flex-wrap justify-center'>
+            <Link className='p-2 sm:p-3 font-bold text-white' to='/'>
+              Home
+            </Link>
+            <Link className='p-2 sm:p-3 font-bold text-white' to='/about'>
+              About
+            </Link>
+            <Link className='p-2 sm:p-3 font-bold text-white' to='/products'>
+              Products
+            </Link>
+            <Link className='p-2 sm:p-3 font-bold text-white' to='/location'>
+              Location
+            </Link>
+            <Link className='p-2 sm:p-3 font-bold text-white' to='/contact-us'>
+              Contact Us
+            </Link>
+          </nav>
+        </div>
+        <div className='flex flex-col justify-center items-center h-full w-full'>
+          <h1 className='text-4xl font-bold text-white mb-8'>
+            Explore The Anime World
+          </h1>
+          <Link
+            className='bg-white text-black rounded-full py-4 px-8 font-bold hover:bg-gray-200'
+            to='/products'
+          >
+            Start Shopping
+          </Link>
         </div>
       </div>
-      <div className='featured-brand container mx-auto my-10 mt-16'>
-        <h1 className='my-5 text-4xl font-extrabold leading-none tracking-tight text-slate-900 md:text-5xl lg:text-6xl'>
-          Featured In{' '}
-          <span className='underline underline-offset-3 decoration-8 decoration-primary-color'>
-            Top Brands
-          </span>
-        </h1>
-        <FeaturedBrand />
-      </div>
-    </>
+    </div>
   )
 }
+
 export default Home
