@@ -32,8 +32,8 @@ function LocationList() {
             src={location.image}
             alt={location.name}
             height='500'
-            className='w-full h-full object-cover mb-2'
-          />
+            className='w-full h-2/3 object-cover mb-2'
+          ></iframe>
         </div>
       ))}
     </div>
@@ -43,7 +43,10 @@ const Location = () => {
   return (
     <div className='container mx-auto'>
       <h1 className='mb-4 text-4xl font-extrabold leading-none tracking-tight text-slate-900 md:text-5xl lg:text-6xl my-10'>
-        Find Us
+        Find{' '}
+        <span className='underline underline-offset-3 decoration-8 decoration-primary-color'>
+          Us
+        </span>
       </h1>
       <LocationList />
     </div>

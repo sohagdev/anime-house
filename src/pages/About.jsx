@@ -5,17 +5,17 @@ import { Link } from 'react-router-dom'
 const About = () => {
   return (
     <div className='container my-10 mx-auto'>
-      <div className='flex flex-col sm:flex-row'>
-        <img className='w-3/4' src={aboutUs} alt='aboutUs' />
-        <div className='content'>
-          <div className='heading sm:ml-5 ml-0'>
+      <div className='flex flex-col sm:flex-row gap-10'>
+        <img className='w-2/4 mx-auto my-auto' src={aboutUs} alt='aboutUs' />
+        <div className='content p-5 sm:p-0'>
+          <div className='heading mx-auto my-auto'>
             <h1 className='mb-10 text-3xl font-extrabold leading-none tracking-tight text-slate-900 md:text-4xl'>
               Our Story{' '}
               <span className='underline underline-offset-3 decoration-8 decoration-primary-color'>
                 Why Choose Us?
               </span>
             </h1>
-            <p className='leading-relaxed mb-5 text-slate-600'>
+            <p className='leading-relaxed mb-10 text-slate-600 text-base'>
               We are New Zealand Biggest Anime Merchandise Wholesaler and
               Retailer Shops with 15 shops Nation Wider And Selling Wide Range
               Of Products And Brands. We Carry Officially Licensed Products -
