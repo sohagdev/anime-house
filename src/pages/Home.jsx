@@ -35,7 +35,7 @@ function Home() {
             </Link>
           </nav>
         </div>
-        <div className='flex flex-col justify-center items-center h-full w-full'>
+        <div className='flex flex-col justify-center items-center h-full w-full text-center'>
           <h1 className='text-4xl font-bold text-white mb-8'>
             Explore The Anime World
           </h1>
