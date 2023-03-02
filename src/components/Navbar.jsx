@@ -1,29 +1,33 @@
 import React, { useState, useContext } from 'react'
+import { PayPalButtons, PayPalScriptProvider } from '@paypal/react-paypal-js'
 import { CartContext } from '../CartContext'
 import CartProduct from './CartProduct'
 import { SearchBar } from './index'
 import { Link } from 'react-router-dom'
 import { RiAccountCircleFill } from 'react-icons/ri'
 import { CgClose } from 'react-icons/cg'
-import { BiMenuAltRight } from 'react-icons/bi'
 import {
   BsFillCartFill,
-  BsTwitter,
   BsInstagram,
   BsFacebook,
   BsYoutube
 } from 'react-icons/bs'
 import logo from '../assets/Logo.png'
+
 const Navbar = () => {
   const [show, setShow] = useState(false)
+  const [showCheckOut, setShowCheckOut] = useState(false)
   const cart = useContext(CartContext)
   const handleClose = () => setShow(false)
+  const handleCheckOutClose = () => setShowCheckOut(false)
   const handleShow = () => setShow(true)
+  const handleCheckOutShow = () => setShowCheckOut(true)
 
   const productCount = cart.items.reduce(
     (sum, product) => sum + product.quantity,
     0
   )
+
   return (
     <>
       <nav className=''>
@@ -134,8 +138,8 @@ const Navbar = () => {
                 </p>
                 <div className='mt-6'>
                   <a
-                    href='#'
                     className='flex items-center justify-center rounded-md border border-transparent bg-primary-color px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-red-700'
+                    onClick={handleCheckOutShow}
                   >
                     Checkout
                   </a>
@@ -146,6 +150,29 @@ const Navbar = () => {
                 There are no items in your cart
               </h1>
             )}
+          </div>
+        </div>
+      </div>
+      <div
+        className={`fixed inset-0 w-full h-full z-10 ${
+          showCheckOut ? '' : 'invisible'
+        }`}
+      >
+        <div
+          className={`absolute inset-0 w-full h-full bg-gray-600 duration-500 ease-out transition-all ${
+            showCheckOut ? 'opacity-50' : 'opacity-0'
+          }`}
+          onClick={handleCheckOutClose}
+        ></div>
+        <div
+          className={`cart absolute md:w-1/3 sm:w-1/2 w-full sm:h-1/3 h-2/4 bg-gray-200 right-0 top-0 left-0 bottom-0 m-auto duration-500 ease-out transition-all overflow-y-scroll rounded-lg p-10 ${
+            showCheckOut ? '' : 'translate-y-full'
+          }`}
+        >
+          <div>
+            <PayPalScriptProvider>
+              <PayPalButtons />
+            </PayPalScriptProvider>
           </div>
         </div>
       </div>
