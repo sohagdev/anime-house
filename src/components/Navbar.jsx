@@ -138,7 +138,7 @@ const Navbar = () => {
                 </p>
                 <div className='mt-6'>
                   <a
-                    className='flex items-center justify-center rounded-md border border-transparent bg-primary-color px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-red-700'
+                    className='flex items-center justify-center rounded-md border border-transparent bg-primary-color px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-red-700 cursor-pointer'
                     onClick={handleCheckOutShow}
                   >
                     Checkout
