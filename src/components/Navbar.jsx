@@ -172,11 +172,11 @@ const Navbar = () => {
           onClick={handleCheckOutClose}
         ></div>
         <div
-          className={`cart absolute sm:w-1/2 w-full h-2/4 bg-gray-200 right-0 top-0 left-0 bottom-0 m-auto duration-500 ease-out transition-all overflow-y-scroll rounded-lg p-10 ${
+          className={`cart absolute sm:w-1/3 w-full h-2/4 bg-gray-200 right-0 top-0 left-0 bottom-0 m-auto duration-500 ease-out transition-all overflow-y-scroll rounded-lg p-10 ${
             showCheckOut ? '' : 'translate-y-full'
           }`}
         >
-          <div>
+          <div className=''>
             <PayPalScriptProvider>
               <PayPalButtons />
             </PayPalScriptProvider>
