@@ -11,7 +11,9 @@ import {
   DeliveryPolicy,
   Refund,
   Terms,
-  AnimeHousePoints
+  AnimeHousePoints,
+  Login,
+  CreateAccount
 } from './pages'
 import { CartProvider } from './CartContext'
 import './App.css'
@@ -46,6 +48,8 @@ function AppContent() {
         <Route path='/refund-policy' element={<Refund />} />
         <Route path='/terms & condition' element={<Terms />} />
         <Route path='/anime-house-points' element={<AnimeHousePoints />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/create-account' element={<CreateAccount />} />
       </Routes>
       {location.pathname !== '/' && <Footer />}
     </>

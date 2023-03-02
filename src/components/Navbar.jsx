@@ -7,6 +7,13 @@ import { Link } from 'react-router-dom'
 import { RiAccountCircleFill } from 'react-icons/ri'
 import { CgClose } from 'react-icons/cg'
 import {
+  FaCcAmex,
+  FaCcVisa,
+  FaCcMastercard,
+  FaCcApplePay,
+  FaGooglePay
+} from 'react-icons/fa'
+import {
   BsFillCartFill,
   BsInstagram,
   BsFacebook,
@@ -39,15 +46,15 @@ const Navbar = () => {
             <div className='relative w-2/4'>
               <SearchBar />
             </div>
-            <button className='hidden sm:block'>
+            <Link to='/login'>
               <RiAccountCircleFill className='mx-2 text-primary-color w-10 h-10' />
-            </button>
-            <button className='relative ml-2 sm:ml-0' onClick={handleShow}>
+            </Link>
+            <Link className='relative ml-2 sm:ml-0' onClick={handleShow}>
               <span className='absolute top-0 right-0 font-bold px-1 bg-slate-900 text-white rounded-full'>
                 {productCount}
               </span>
               <BsFillCartFill className='text-primary-color w-10 h-10' />
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -165,7 +172,7 @@ const Navbar = () => {
           onClick={handleCheckOutClose}
         ></div>
         <div
-          className={`cart absolute md:w-1/3 sm:w-1/2 w-full sm:h-1/3 h-2/4 bg-gray-200 right-0 top-0 left-0 bottom-0 m-auto duration-500 ease-out transition-all overflow-y-scroll rounded-lg p-10 ${
+          className={`cart absolute sm:w-1/2 w-full h-2/4 bg-gray-200 right-0 top-0 left-0 bottom-0 m-auto duration-500 ease-out transition-all overflow-y-scroll rounded-lg p-10 ${
             showCheckOut ? '' : 'translate-y-full'
           }`}
         >
@@ -173,6 +180,20 @@ const Navbar = () => {
             <PayPalScriptProvider>
               <PayPalButtons />
             </PayPalScriptProvider>
+            <button className='text-primary-color underline'>
+              Ship to the billing Address
+            </button>{' '}
+            <br />
+            <button className='text-primary-color underline'>
+              Pick up at the Anime House Megastore
+            </button>
+            <div className='payment-icons flex justify-center mt-10 items-center'>
+              <FaCcAmex className='w-14 h-14 p-3 text-blue-500' />
+              <FaCcVisa className='w-14 h-14 p-3 text-blue-800' />
+              <FaCcMastercard className='w-14 h-14 p-3 text-red-600' />
+              <FaCcApplePay className='w-14 h-14 p-3 text-slate-600' />
+              <FaGooglePay className='w-14 h-14 p-3 text-slate-800' />
+            </div>
           </div>
         </div>
       </div>
