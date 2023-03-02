@@ -19,7 +19,8 @@ import {
   MostPopularFunko,
   MostPopularGKResinBoa,
   MostPopularGKResinDragon,
-  MostPopularTrafalgar
+  MostPopularTrafalgar,
+  FunkoPopBag
 } from '../assets/index'
 
 const productsArray = [
@@ -161,6 +162,13 @@ const productsArray = [
     title: 'Most popular Trafalgar',
     price: 65,
     image: `${MostPopularTrafalgar}`,
+    featured: true
+  },
+  {
+    id: uuidv4(),
+    title: 'Funko Pop - pokemon bag',
+    price: 75,
+    image: `${FunkoPopBag}`,
     featured: true
   }
 ]
