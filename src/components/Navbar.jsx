@@ -27,10 +27,10 @@ const Navbar = () => {
   return (
     <>
       <nav className=''>
-        <div className='my-10 mx-10'>
-          <div className='flex justify-center'>
-            <Link to='/' className='w-28 pr-3'>
-              <img src={logo} alt='logo' />
+        <div className='my-5 mx-5'>
+          <div className='flex justify-center items-center'>
+            <Link to='/' className='pr-3'>
+              <img src={logo} alt='logo' className='w-48 h-auto' />
             </Link>
             <div className='relative w-2/4'>
               <SearchBar />
@@ -42,7 +42,7 @@ const Navbar = () => {
               <span className='absolute top-0 right-0 font-bold px-1 bg-slate-900 text-white rounded-full'>
                 {productCount}
               </span>
-              <BsFillCartFill className='text-primary-color w-8 h-8' />
+              <BsFillCartFill className='text-primary-color w-10 h-10' />
             </button>
           </div>
         </div>
@@ -67,16 +67,22 @@ const Navbar = () => {
               </Link>
             </div>
             <div className='social-links flex '>
-              <Link to='#'>
+              <Link
+                to='https://www.youtube.com/channel/UCq5X6cgj2ydu64zWluEDsLw'
+                target='_blank'
+              >
                 <BsYoutube className='w-10 h-10 sm:w-11 sm:h-11 px-3 ' />
               </Link>
-              <Link to='#'>
-                <BsTwitter className='w-10 h-10 sm:w-11 sm:h-11 px-3 ' />
-              </Link>
-              <Link to='#'>
+              <Link
+                to='https://www.facebook.com/animehouse.co.nz'
+                target='_blank'
+              >
                 <BsFacebook className='w-10 h-10 sm:w-11 sm:h-11 px-3 ' />
               </Link>
-              <Link to='#'>
+              <Link
+                to='https://www.instagram.com/animehousenz/'
+                target='_blank'
+              >
                 <BsInstagram className='w-10 h-10 sm:w-11 sm:h-11 px-3 ' />
               </Link>
             </div>

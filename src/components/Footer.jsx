@@ -21,16 +21,19 @@ const Footer = () => {
         />
         <div className='container flex flex-col justify-center mx-auto items-center py-5 pt-10'>
           <div className='social-links flex'>
-            <Link to='#'>
+            <Link
+              to='https://www.youtube.com/channel/UCq5X6cgj2ydu64zWluEDsLw'
+              target='_blank'
+            >
               <BsYoutube className='w-10 h-10 sm:w-11 sm:h-11 px-3 ' />
             </Link>
-            <Link to='#'>
-              <BsTwitter className='w-10 h-10 sm:w-11 sm:h-11 px-3 ' />
-            </Link>
-            <Link to='#'>
+            <Link
+              to='https://www.facebook.com/animehouse.co.nz'
+              target='_blank'
+            >
               <BsFacebook className='w-10 h-10 sm:w-11 sm:h-11 px-3 ' />
             </Link>
-            <Link to='#'>
+            <Link to='https://www.instagram.com/animehousenz/' target='_blank'>
               <BsInstagram className='w-10 h-10 sm:w-11 sm:h-11 px-3 ' />
             </Link>
           </div>
@@ -64,7 +67,7 @@ const Footer = () => {
             </Link>
           </div>
           <div className='copyright pb-10'>
-            <h1>&copy; {year} Arywan | All Right Reserved</h1>
+            <h1>Copyright &copy; {year} Tim Arywan | All Right Reserved</h1>
           </div>
         </div>
       </div>
