@@ -7,20 +7,26 @@ const locations = [
   {
     id: 1,
     name: 'Auckland Shop',
+    phone: '09 - 9488825',
+    addressName: 'Anime House /Shop 313, Westfield Newmarket Auckland',
     image:
-      'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6383.634911506143!2d174.776891!3d-36.870788!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d48776b649daf%3A0x17f4eb9a90b18f3b!2sWestfield%20Newmarket!5e0!3m2!1sen!2snz!4v1677566447158!5m2!1sen!2snz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade'
+      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.7771025840316!2d174.77450431586576!3d-36.871753788500804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d49338b35dfa9%3A0xcaea25b3b897254f!2sAnime%20House%20at%20Westfield%20Newmarket!5e0!3m2!1sen!2sbd!4v1678425138575!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade'
   },
   {
     id: 2,
     name: 'Wellington Shop',
+    phone: '04 - 9792618',
+    addressName: 'Anime House / 49 Dixon Street. Wellington',
     image:
-      'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d23141.068719211584!2d172.598833!3d-43.530833!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d318af33e049b35%3A0xc1393ee1a45e482d!2sWestfield%20Riccarton!5e0!3m2!1sen!2snz!4v1677566156604!5m2!1sen!2snz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade'
+      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.778793106851!2d174.7745777159816!3d-41.29191854867604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38aff3d834510f%3A0x145f9f0a3b4f92c5!2sAnime%20House%20Wellington!5e0!3m2!1sen!2sbd!4v1678425192541!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade'
   },
   {
     id: 3,
     name: 'Christchurch Shop',
+    phone: '03 - 4203888',
+    addressName: 'Anime House / Riccarton Mall Shop036 Christchurch',
     image:
-      'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6315.801146808609!2d176.2238!3d-37.675044!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d6af73947a557%3A0x8621e9f9455609d2!2sBayfair%20Shopping%20Centre!5e0!3m2!1sen!2snz!4v1677566694518!5m2!1sen!2snz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade'
+      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.6056049513973!2d172.59463331604363!3d-43.53141648993699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d318b257267e45d%3A0x6973acaae279f96e!2sAnime%20House%20at%20Westfield%20Riccarton!5e0!3m2!1sen!2sbd!4v1678425240278!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade'
   }
 ]
 function LocationList() {
@@ -33,7 +39,7 @@ function LocationList() {
               {location.name}
             </h1>
             <p className='mt-10 text-primary-color'>
-              Our Shop Is Located In The Riccarton Mall, Chrischurch
+              Our Shop Is Located In The {location.addressName}
             </p>
             <div className='contact-links mt-10 flex'>
               <button className='text-primary-color border-2 border-primary-color p-3 rounded-full'>
@@ -42,7 +48,7 @@ function LocationList() {
               <p className='text-2xl text-primary-color font-bold ml-5'>
                 Phone <br />{' '}
                 <span className='text-lg font-medium text-slate-600'>
-                  09-214-8850
+                  {location.phone}
                 </span>
               </p>
             </div>
@@ -64,7 +70,7 @@ function LocationList() {
               <p className='text-2xl text-primary-color font-bold ml-5'>
                 Location <br />{' '}
                 <span className='text-lg font-medium text-slate-600'>
-                  Anime House / Shop 036, Riccarton Mall Christchurch
+                  {location.addressName}
                 </span>
               </p>
             </div>

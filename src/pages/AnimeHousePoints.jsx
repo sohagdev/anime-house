@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { animePoints } from '../assets'
 const AnimeHousePoints = () => {
   return (
@@ -24,7 +25,9 @@ const AnimeHousePoints = () => {
             </button>
             <p className='text-slate-600'>
               Already have an account?{' '}
-              <button className='text-primary-color underline'>Sign in</button>
+              <Link to='/login' className='text-primary-color underline'>
+                Sign in
+              </Link>
             </p>
           </div>
         </div>
