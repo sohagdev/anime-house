@@ -5,9 +5,13 @@ import { Link } from 'react-router-dom'
 const About = () => {
   return (
     <div className='container my-10 mx-auto'>
-      <div className='flex flex-col sm:flex-row gap-10'>
-        <img className='w-2/4 mx-auto my-auto' src={aboutUs} alt='aboutUs' />
-        <div className='content p-5 sm:p-0'>
+      <div className='flex flex-col md:flex-row gap-10'>
+        <img
+          className='w-full md:w-2/4 p-3 h-auto mx-auto my-auto flex-1'
+          src={aboutUs}
+          alt='aboutUs'
+        />
+        <div className='content p-5 sm:p-0 flex-1'>
           <div className='heading mx-auto my-auto'>
             <h1 className='mb-10 text-3xl font-extrabold leading-none tracking-tight text-slate-900 md:text-4xl'>
               Our Story{' '}

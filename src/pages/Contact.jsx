@@ -6,7 +6,7 @@ import { HiLocationMarker } from 'react-icons/hi'
 const Contact = () => {
   return (
     <div className='container flex flex-col sm:flex-row mx-auto'>
-      <div className='contact-details my-10 mx-auto p-5'>
+      <div className='contact-details my-10 mx-auto p-5 flex-1'>
         <h1 className='mb-4 text-4xl font-extrabold leading-none tracking-tight text-slate-900 md:text-5xl lg:text-6xl'>
           Get In{' '}
           <span className='underline underline-offset-3 decoration-8 decoration-primary-color'>
@@ -14,13 +14,12 @@ const Contact = () => {
           </span>
         </h1>
         <p className='mt-10 text-slate-600'>
-          We Love Hearing From All Our Customers If you Have Any Questions Or{' '}
-          <br />
+          We Love Hearing From All Our Customers If you Have Any Questions Or
           Feedback About Our Products Please Feel Free To Fill Out The Form
           Below Or Call Us At The Below Contact Details
         </p>
         <div className='contact-links mt-10 flex'>
-          <button className='text-primary-color border-2 border-primary-color p-2 rounded-full'>
+          <button className='text-primary-color border-2 border-primary-color p-3 rounded-full'>
             <BsTelephoneFill className='w-10 h-10' />
           </button>
           <p className='text-2xl text-primary-color font-bold ml-5'>
@@ -31,7 +30,7 @@ const Contact = () => {
           </p>
         </div>
         <div className='contact-links mt-5 flex'>
-          <button className='text-primary-color border-2 border-primary-color p-2 rounded-full'>
+          <button className='text-primary-color border-2 border-primary-color p-3 rounded-full'>
             <MdEmail className='w-10 h-10' />
           </button>
           <p className='text-2xl text-primary-color font-bold ml-5'>
@@ -42,7 +41,7 @@ const Contact = () => {
           </p>
         </div>
         <div className='contact-links mt-5 flex'>
-          <button className='text-primary-color border-2 border-primary-color p-2 rounded-full'>
+          <button className='text-primary-color border-2 border-primary-color p-3 rounded-full'>
             <HiLocationMarker className='w-10 h-10' />
           </button>
           <p className='text-2xl text-primary-color font-bold ml-5'>
@@ -53,7 +52,7 @@ const Contact = () => {
           </p>
         </div>
       </div>
-      <div className='contact-form p-5 mx-auto my-auto'>
+      <div className='contact-form p-5 mx-auto my-auto flex-1'>
         <form action='#'>
           <div className='flex mb-5'>
             <input

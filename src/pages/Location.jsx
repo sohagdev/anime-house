@@ -31,10 +31,10 @@ const locations = [
 ]
 function LocationList() {
   return (
-    <div className='mt-16 flex flex-col items-center gap-5'>
+    <div className=' flex flex-col items-center gap-5'>
       {locations.map((location) => (
         <div className='container flex flex-col sm:flex-row mx-auto'>
-          <div className='contact-details my-10 mx-auto p-5'>
+          <div className='flex-1 contact-details p-3'>
             <h1 className='mb-4 text-4xl font-extrabold leading-none tracking-tight text-primary-color'>
               {location.name}
             </h1>
@@ -75,7 +75,7 @@ function LocationList() {
               </p>
             </div>
           </div>
-          <div className='contact-form p-5 mx-auto my-auto w-2/4 h-full'>
+          <div className='flex-1 p-5 mx-auto my-auto sm:w-2/4 w-full h-full'>
             <iframe
               src={location.image}
               frameborder='0'
@@ -90,7 +90,7 @@ function LocationList() {
 const Location = () => {
   return (
     <div className='container mx-auto'>
-      <h1 className='mb-4 text-4xl font-extrabold leading-none tracking-tight text-slate-900 md:text-5xl lg:text-6xl my-10'>
+      <h1 className='p-3 text-4xl font-extrabold leading-none tracking-tight text-slate-900 md:text-5xl lg:text-6xl my-10'>
         Find{' '}
         <span className='underline underline-offset-3 decoration-8 decoration-primary-color'>
           Us

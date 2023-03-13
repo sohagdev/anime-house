@@ -3,13 +3,13 @@ import React from 'react'
 const Terms = () => {
   return (
     <div className='container mx-auto'>
-      <h1 className='mb-4 text-4xl font-extrabold leading-none tracking-tight text-slate-900 md:text-5xl lg:text-6xl my-10'>
+      <h1 className='p-3 text-4xl font-extrabold leading-none tracking-tight text-slate-900 md:text-5xl lg:text-6xl my-10'>
         Terms &{' '}
         <span className='underline underline-offset-3 decoration-8 decoration-primary-color'>
           Condition
         </span>
       </h1>
-      <div className='w-2/4 mx-auto my-10'>
+      <div className='lg:w-2/4 sm:w-3/4 w-full p-5 mx-auto my-10'>
         <p className='text-slate-600'>
           <span className='text-slate-800 font-semibold'> OVERVIEW</span> <br />
           <br />
