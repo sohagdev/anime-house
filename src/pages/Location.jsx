@@ -42,34 +42,34 @@ function LocationList() {
               Our Shop Is Located In The {location.addressName}
             </p>
             <div className='contact-links mt-10 flex'>
-              <button className='text-primary-color border-2 border-primary-color p-3 rounded-full'>
+              <button className='text-primary-color border-2 border-primary-color p-3 rounded-full mr-3'>
                 <BsTelephoneFill className='w-7 h-7' />
               </button>
-              <p className='text-2xl text-primary-color font-bold ml-5'>
+              <p className='text-2xl text-primary-color font-bold'>
                 Phone <br />{' '}
-                <span className='text-lg font-medium text-slate-600'>
+                <span className='text-sm font-medium text-slate-600'>
                   {location.phone}
                 </span>
               </p>
             </div>
             <div className='contact-links mt-5 flex'>
-              <button className='text-primary-color border-2 border-primary-color p-3 rounded-full'>
+              <button className='text-primary-color border-2 border-primary-color p-3 rounded-full mr-3'>
                 <MdEmail className='w-7 h-7' />
               </button>
-              <p className='text-2xl text-primary-color font-bold ml-5'>
+              <p className='text-2xl text-primary-color font-bold'>
                 Email <br />{' '}
-                <span className='text-lg font-medium text-slate-600'>
+                <span className='text-sm font-medium text-slate-600'>
                   info@animehouse.Co.Nz
                 </span>
               </p>
             </div>
             <div className='contact-links mt-5 flex'>
-              <button className='text-primary-color border-2 border-primary-color p-3 rounded-full'>
+              <button className='text-primary-color border-2 border-primary-color p-3 rounded-full mr-3'>
                 <HiLocationMarker className='w-7 h-7' />
               </button>
-              <p className='text-2xl text-primary-color font-bold ml-5'>
+              <p className='text-2xl text-primary-color font-bold'>
                 Location <br />{' '}
-                <span className='text-lg font-medium text-slate-600'>
+                <span className='text-sm font-medium text-slate-600 flex flex-wrap'>
                   {location.addressName}
                 </span>
               </p>
