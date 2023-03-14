@@ -67,7 +67,7 @@ const Footer = () => {
             </Link>
           </div>
           <div className='copyright pb-10'>
-            <h1>Copyright &copy; {year} Tim Arywan | All Right Reserved</h1>
+            <h1>Copyright &copy; {year} Tim Aryawn | All Right Reserved</h1>
           </div>
         </div>
       </div>

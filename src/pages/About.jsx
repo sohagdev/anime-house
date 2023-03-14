@@ -16,18 +16,16 @@ const About = () => {
               </span>
             </h1>
             <p className='leading-relaxed mb-10 text-slate-600 text-base'>
-              We are New Zealand Biggest Anime Merchandise Wholesaler and
-              Retailer Shops with 15 shops Nation Wider And Selling Wide Range
-              Of Products And Brands. We Carry Officially Licensed Products -
-              Including Those Taht COme with Bonus Items - And Hold Special
-              Events. The First Animate Store Was Opened In 1990 In Auckland.
-              Across Our Over Thirty Three Years of History. We Have Aimed To
-              NOt Only Simply Sell Goods But Also Serve As A Cultural Hub And
-              Gateway To The Cutting Edge Of The Japanese And K-Pop Anime Scene.
-              <br />
-              <br />
-              If You Come To New Zealand. By All Means Please Stop By At An
-              Animate Store And Experience It For YouSelf.
+              We are New Zealand biggest anime merchandise wholesaler and
+              retailer shops with 15 shops nationwide and selling over 1,000
+              products with wide range brands. We only sell officially licensed
+              products.Our first animate store was opened In 1990 In Auckland.
+              Across our over thirty three years of history. Our aim when we
+              opened our first shop was not to make our business as a cultural
+              hub and melting pot of western, Japanese and Korean cultures.
+              <br /> <br />
+              If you visit New Zealand, please visit our stores and explore the
+              anime world.
             </p>
             <Link
               className='bg-primary-color text-white rounded-full py-4 px-8 font-bold'
