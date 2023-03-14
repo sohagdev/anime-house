@@ -3,13 +3,13 @@ import React from 'react'
 const DeliveryPolicy = () => {
   return (
     <div className='container mx-auto'>
-      <h1 className='mb-4 text-4xl font-extrabold leading-none tracking-tight text-slate-900 md:text-5xl lg:text-6xl my-10'>
+      <h1 className='p-3 text-4xl font-extrabold leading-none tracking-tight text-slate-900 md:text-5xl lg:text-6xl my-10'>
         Delivery{' '}
         <span className='underline underline-offset-3 decoration-8 decoration-primary-color'>
           Policy
         </span>
       </h1>
-      <p className='w-2/4 mx-auto my-10 text-slate-600'>
+      <p className='lg:w-2/4 sm:w-3/4 w-full p-5 mx-auto my-10'>
         <span className='text-slate-800 font-semibold'>
           {' '}
           New Zealand & Australia Customer:
