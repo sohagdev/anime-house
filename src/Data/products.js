@@ -28,6 +28,8 @@ const productsArray = [
     id: uuidv4(),
     title: 'Anime House $20 Gift Card',
     price: 20,
+    description:
+      'Gift cards are delivered by email and contain codes to redeem them at checkout. Our gift cards have no additional processing fees Can be used at Online stores and Retail Shops How do your gift Cards work?',
     image: `${giftCardOne}`,
     featured: false
   },
@@ -35,6 +37,8 @@ const productsArray = [
     id: uuidv4(),
     title: 'Anime House $30 Gift Card',
     price: 30,
+    description:
+      'Gift cards are delivered by email and contain codes to redeem them at checkout. Our gift cards have no additional processing fees Can be used at Online stores and Retail Shops How do your gift Cards work?',
     image: `${giftCardTwo}`,
     featured: false
   },
@@ -42,6 +46,8 @@ const productsArray = [
     id: uuidv4(),
     title: 'Anime House $50 Gift Card',
     price: 50,
+    description:
+      'Gift cards are delivered by email and contain codes to redeem them at checkout. Our gift cards have no additional processing fees Can be used at Online stores and Retail Shops How do your gift Cards work?',
     image: `${giftCardThree}`,
     featured: false
   },
@@ -49,6 +55,8 @@ const productsArray = [
     id: uuidv4(),
     title: 'Anime House $100 Gift Card',
     price: 100,
+    description:
+      'Gift cards are delivered by email and contain codes to redeem them at checkout. Our gift cards have no additional processing fees Can be used at Online stores and Retail Shops How do your gift Cards work?',
     image: `${giftCardFour}`,
     featured: true
   },
@@ -56,6 +64,8 @@ const productsArray = [
     id: uuidv4(),
     title: 'Anime House $500 Gift Card',
     price: 500,
+    description:
+      'Gift cards are delivered by email and contain codes to redeem them at checkout. Our gift cards have no additional processing fees Can be used at Online stores and Retail Shops How do your gift Cards work?',
     image: `${giftCardFive}`,
     featured: true
   },
@@ -63,6 +73,8 @@ const productsArray = [
     id: uuidv4(),
     title: 'Japanese Anime Bandai',
     price: 70,
+    description:
+      'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${JapaneseAnimeBandai}`,
     featured: false
   },
@@ -70,6 +82,8 @@ const productsArray = [
     id: uuidv4(),
     title: 'Japanese Anime Banpresto',
     price: 60,
+    description:
+      'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${JapaneseAnimeBanpresto}`,
     featured: true
   },
@@ -77,6 +91,8 @@ const productsArray = [
     id: uuidv4(),
     title: 'Japanese Anime Clothes all size',
     price: 35,
+    description:
+      'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${JapaneseAnimeClothes}`,
     featured: true
   },
@@ -84,6 +100,8 @@ const productsArray = [
     id: uuidv4(),
     title: 'Japanese Anime Death Note',
     price: 40,
+    description:
+      'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${JapaneseAnimeDeath}`,
     featured: false
   },
@@ -91,6 +109,8 @@ const productsArray = [
     id: uuidv4(),
     title: 'Japanese Anime Wallet',
     price: 100,
+    description:
+      'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${JapaneseAnimeWallet}`,
     featured: true
   },
@@ -98,6 +118,8 @@ const productsArray = [
     id: uuidv4(),
     title: 'Kpop Blackpink backpack',
     price: 200,
+    description:
+      'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${kpopBlackpinkBackpack}`,
     featured: false
   },
@@ -105,6 +127,8 @@ const productsArray = [
     id: uuidv4(),
     title: 'Kpop blackpink-cd',
     price: 40,
+    description:
+      'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${kpopBlackpinkCd}`,
     featured: true
   },
@@ -112,6 +136,8 @@ const productsArray = [
     id: uuidv4(),
     title: 'Kpop BTS Wallet',
     price: 50,
+    description:
+      'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${kpopBlackpinkWallet}`,
     featured: true
   },
@@ -119,6 +145,8 @@ const productsArray = [
     id: uuidv4(),
     title: 'Kpop BTS phone case',
     price: 70,
+    description:
+      'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${kpopBlackpinkCase}`,
     featured: false
   },
@@ -126,6 +154,8 @@ const productsArray = [
     id: uuidv4(),
     title: 'Kpop Funko pop bts V dynamite',
     price: 20,
+    description:
+      'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${kpopBlackpinkBtsV}`,
     featured: true
   },
@@ -133,6 +163,8 @@ const productsArray = [
     id: uuidv4(),
     title: 'Most Popular Banpresto - Nanuto',
     price: 70,
+    description:
+      'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${MostPopularBanpresto}`,
     featured: true
   },
@@ -140,6 +172,8 @@ const productsArray = [
     id: uuidv4(),
     title: 'Most Popular Funko Pop - Edward elnc',
     price: 90,
+    description:
+      'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${MostPopularFunko}`,
     featured: false
   },
@@ -147,6 +181,8 @@ const productsArray = [
     id: uuidv4(),
     title: 'Most Popular Gk Resin - Boa Hancock',
     price: 100,
+    description:
+      'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${MostPopularGKResinBoa}`,
     featured: true
   },
@@ -154,6 +190,8 @@ const productsArray = [
     id: uuidv4(),
     title: 'Most Popular GK Resin - Dragon Ball',
     price: 55,
+    description:
+      'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${MostPopularGKResinDragon}`,
     featured: false
   },
@@ -161,6 +199,8 @@ const productsArray = [
     id: uuidv4(),
     title: 'Most popular Trafalgar',
     price: 65,
+    description:
+      'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${MostPopularTrafalgar}`,
     featured: true
   },
@@ -168,6 +208,8 @@ const productsArray = [
     id: uuidv4(),
     title: 'Funko Pop - pokemon bag',
     price: 75,
+    description:
+      'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${FunkoPopBag}`,
     featured: true
   }

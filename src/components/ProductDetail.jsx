@@ -124,21 +124,7 @@ const ProductDetail = () => {
                   </a>
                 </span>
               </div>
-              <p className='leading-relaxed'>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea
-                possimus fugit ipsam ullam temporibus illum optio maxime
-                aspernatur dicta consectetur eligendi accusamus eaque assumenda,
-                accusantium non vero! Exercitationem rerum necessitatibus
-                perspiciatis maiores odio at alias in ipsam veritatis voluptate
-                laudantium dolor aliquam architecto eos tempore doloribus
-                dolorem voluptatibus, ratione iusto atque aut accusamus. Ea
-                corporis iusto harum dicta aspernatur eius eveniet praesentium
-                architecto exercitationem. Eaque, culpa a temporibus sint
-                voluptatem inventore. Sed praesentium asperiores laboriosam
-                magni deleniti quis animi reiciendis ea facilis in, officiis
-                doloribus omnis. Cumque nihil aliquam amet, fugiat assumenda
-                repellat quam magnam repudiandae? In ut unde asperiores!
-              </p>
+              <p className='leading-relaxed'>{productData.description}</p>
               <div className='flex mt-6 items-center pb-5 border-b-2 border-gray-200 mb-5'>
                 <div className='text-xl font-bold rounded-md text-gray-500 border-2 border-primary-color'>
                   <button
