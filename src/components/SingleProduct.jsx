@@ -2,13 +2,13 @@ import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../CartContext'
 const singleProduct = ({ product }) => {
-  const { id, title, price, image } = product
+  const { id, title, price, image, stocks } = product
   const cart = useContext(CartContext)
   return (
-    <div className='w-full bg-white rounded-lg drop-shadow-md hover:drop-shadow-xl'>
+    <div className='w-full bg-white rounded-lg drop-shadow-md hover:drop-shadow-xl my-auto'>
       <Link to={id ? `/product/${id}` : 'not available'}>
         <img
-          className='p-8 rounded-t-lg w-full h-2/3'
+          className='p-8 rounded-t-lg w-full h-auto'
           src={image}
           alt='product image'
         />
@@ -19,6 +19,7 @@ const singleProduct = ({ product }) => {
             {title}
           </h5>
         </a>
+
         <div className='flex items-center mt-2.5 mb-5'>
           <svg
             aria-hidden='true'
@@ -73,6 +74,9 @@ const singleProduct = ({ product }) => {
           <span className='bg-red-200 text-primary-color text-xs font-semibold mr-2 px-2.5 py-0.5 rounded  ml-3'>
             5.0
           </span>
+        </div>
+        <div className='stocks text-md mb-3 font-semibold'>
+          Stocks: {stocks}
         </div>
         <div className='flex items-center justify-between'>
           <span className='text-3xl font-bold text-gray-900'>${price}</span>

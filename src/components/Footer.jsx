@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { BsTwitter, BsInstagram, BsFacebook, BsYoutube } from 'react-icons/bs'
+import { BsInstagram, BsFacebook, BsYoutube } from 'react-icons/bs'
 import Wave from 'react-wavify'
 const Footer = () => {
   const [year, setYear] = useState(new Date().getFullYear())
@@ -38,21 +38,6 @@ const Footer = () => {
             </Link>
           </div>
           <div className='pages flex flex-wrap justify-center items-center py-10 text-lg'>
-            <Link className='m-3  font-bold' to='/'>
-              Home
-            </Link>
-            <Link className='m-3  font-bold' to='/about'>
-              About
-            </Link>
-            <Link className='m-3  font-bold' to='/products'>
-              Products
-            </Link>
-            <Link className='m-3  font-bold' to='/location'>
-              Location
-            </Link>
-            <Link className='m-3  font-bold' to='/contact-us'>
-              Contact Us
-            </Link>
             <Link className='m-3  font-bold' to='/terms & condition'>
               Term & Condition
             </Link>

@@ -31,6 +31,7 @@ const productsArray = [
     description:
       'Gift cards are delivered by email and contain codes to redeem them at checkout. Our gift cards have no additional processing fees Can be used at Online stores and Retail Shops How do your gift Cards work?',
     image: `${giftCardOne}`,
+    stocks: 30,
     featured: false
   },
   {
@@ -40,6 +41,7 @@ const productsArray = [
     description:
       'Gift cards are delivered by email and contain codes to redeem them at checkout. Our gift cards have no additional processing fees Can be used at Online stores and Retail Shops How do your gift Cards work?',
     image: `${giftCardTwo}`,
+    stocks: 25,
     featured: false
   },
   {
@@ -49,6 +51,7 @@ const productsArray = [
     description:
       'Gift cards are delivered by email and contain codes to redeem them at checkout. Our gift cards have no additional processing fees Can be used at Online stores and Retail Shops How do your gift Cards work?',
     image: `${giftCardThree}`,
+    stocks: 20,
     featured: false
   },
   {
@@ -58,6 +61,7 @@ const productsArray = [
     description:
       'Gift cards are delivered by email and contain codes to redeem them at checkout. Our gift cards have no additional processing fees Can be used at Online stores and Retail Shops How do your gift Cards work?',
     image: `${giftCardFour}`,
+    stocks: 10,
     featured: true
   },
   {
@@ -67,6 +71,7 @@ const productsArray = [
     description:
       'Gift cards are delivered by email and contain codes to redeem them at checkout. Our gift cards have no additional processing fees Can be used at Online stores and Retail Shops How do your gift Cards work?',
     image: `${giftCardFive}`,
+    stocks: 13,
     featured: true
   },
   {
@@ -76,6 +81,7 @@ const productsArray = [
     description:
       'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${JapaneseAnimeBandai}`,
+    stocks: 11,
     featured: false
   },
   {
@@ -85,6 +91,7 @@ const productsArray = [
     description:
       'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${JapaneseAnimeBanpresto}`,
+    stocks: 13,
     featured: true
   },
   {
@@ -94,6 +101,7 @@ const productsArray = [
     description:
       'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${JapaneseAnimeClothes}`,
+    stocks: 34,
     featured: true
   },
   {
@@ -103,6 +111,7 @@ const productsArray = [
     description:
       'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${JapaneseAnimeDeath}`,
+    stocks: 23,
     featured: false
   },
   {
@@ -112,6 +121,7 @@ const productsArray = [
     description:
       'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${JapaneseAnimeWallet}`,
+    stocks: 24,
     featured: true
   },
   {
@@ -121,6 +131,7 @@ const productsArray = [
     description:
       'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${kpopBlackpinkBackpack}`,
+    stocks: 21,
     featured: false
   },
   {
@@ -130,6 +141,7 @@ const productsArray = [
     description:
       'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${kpopBlackpinkCd}`,
+    stocks: 23,
     featured: true
   },
   {
@@ -139,6 +151,7 @@ const productsArray = [
     description:
       'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${kpopBlackpinkWallet}`,
+    stocks: 19,
     featured: true
   },
   {
@@ -148,6 +161,7 @@ const productsArray = [
     description:
       'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${kpopBlackpinkCase}`,
+    stocks: 17,
     featured: false
   },
   {
@@ -157,6 +171,7 @@ const productsArray = [
     description:
       'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${kpopBlackpinkBtsV}`,
+    stocks: 14,
     featured: true
   },
   {
@@ -166,6 +181,7 @@ const productsArray = [
     description:
       'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${MostPopularBanpresto}`,
+    stocks: 17,
     featured: true
   },
   {
@@ -175,6 +191,7 @@ const productsArray = [
     description:
       'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${MostPopularFunko}`,
+    stocks: 11,
     featured: false
   },
   {
@@ -184,6 +201,7 @@ const productsArray = [
     description:
       'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${MostPopularGKResinBoa}`,
+    stocks: 14,
     featured: true
   },
   {
@@ -193,6 +211,7 @@ const productsArray = [
     description:
       'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${MostPopularGKResinDragon}`,
+    stocks: 25,
     featured: false
   },
   {
@@ -202,6 +221,7 @@ const productsArray = [
     description:
       'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${MostPopularTrafalgar}`,
+    stocks: 20,
     featured: true
   },
   {
@@ -211,6 +231,7 @@ const productsArray = [
     description:
       'Pickup available at Anime House Mega Store Usually ready in 24 hours',
     image: `${FunkoPopBag}`,
+    stocks: 16,
     featured: true
   }
 ]
