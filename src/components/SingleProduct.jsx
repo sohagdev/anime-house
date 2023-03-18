@@ -5,10 +5,10 @@ const singleProduct = ({ product }) => {
   const { id, title, price, image, stocks } = product
   const cart = useContext(CartContext)
   return (
-    <div className='w-full bg-white rounded-lg drop-shadow-md hover:drop-shadow-xl my-auto'>
+    <div className='w-full bg-white rounded-lg drop-shadow-md hover:drop-shadow-xl'>
       <Link to={id ? `/product/${id}` : 'not available'}>
         <img
-          className='p-8 rounded-t-lg w-full h-auto'
+          className='p-8 rounded-t-lg w-full h-3/5'
           src={image}
           alt='product image'
         />
