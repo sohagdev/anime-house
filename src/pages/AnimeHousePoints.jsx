@@ -20,9 +20,12 @@ const AnimeHousePoints = () => {
               With more ways to unlock exciting perks, this is your all access
               pass to exclusive rewards
             </p>
-            <button className='px-10 py-5 rounded-lg my-10 bg-primary-color text-white font-bold'>
+            <Link
+              className='px-10 py-5 rounded-lg my-10 bg-primary-color text-white font-bold'
+              to='/create-account'
+            >
               Join Now
-            </button>
+            </Link>
             <p className='text-slate-600'>
               Already have an account?{' '}
               <Link to='/login' className='text-primary-color underline'>
