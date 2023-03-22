@@ -16,17 +16,17 @@ const AnimeHousePoints = () => {
             <h1 className='text-slate-800 font-semibold sm:mt-24 mt-14'>
               Become a member
             </h1>
-            <p className='text-slate-600 mt-3'>
+            <p className='text-slate-600 mt-3 mb-10'>
               With more ways to unlock exciting perks, this is your all access
               pass to exclusive rewards
             </p>
             <Link
-              className='px-10 py-5 rounded-lg my-10 bg-primary-color text-white font-bold'
+              className='px-10 py-5 rounded-lg my-16 bg-primary-color text-white font-bold'
               to='/create-account'
             >
               Join Now
             </Link>
-            <p className='text-slate-600'>
+            <p className='text-slate-600 mt-10'>
               Already have an account?{' '}
               <Link to='/login' className='text-primary-color underline'>
                 Sign in
