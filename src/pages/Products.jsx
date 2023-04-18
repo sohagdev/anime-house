@@ -141,7 +141,7 @@ const Products = () => {
         <h1 className='my-5 text-4xl font-extrabold leading-none tracking-tight text-slate-900 md:text-5xl lg:text-6xl'>
           Featured In{' '}
           <span className='underline underline-offset-3 decoration-8 decoration-primary-color'>
-            Top Brands
+            Top Brands Of The World
           </span>
         </h1>
         <FeaturedBrand />
